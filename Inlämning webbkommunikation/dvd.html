@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEE-VEE-DEE</title>
+    <link rel="stylesheet" href="dvd.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="firstpage-container">
+      <header class="header">
+        <h1 class="header-title">DEE-VEE-DEE</h1>
+      </header>
+
+      <section class="add-movie">
+
+        <article class="add-movie-container">
+            <input type="text" placeholder="Title" id="addTitle">
+            <input type="text" placeholder="Genre" id="addGenre">
+            <input type="text" placeholder="Release year" id="addReleaseYear">
+            <button id="addMovieToList">Add movie</button>
+        </article>
+
+        <article class="addAllMovies">
+        <button id="showMovies">Show all added movies</button>
+        </article>
+      </section>
+
+      <section class="section-3">
+        <article class="search-section">
+        <input type="text" placeholder="Search movies" id="searchBar"> <button id="searchButton">Search</button>
+      </article>
+      </section>
+    </div>
+
+    <div id="displayMovies">
+
+    </div>
+    <button id="closeMovies" class="close-button">&times;</button>
+
+    <script type="module" src="dvd-main.js"></script>
+  </body>
+</html>

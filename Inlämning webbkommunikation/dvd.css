@@ -1,0 +1,141 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+
+.firstpage-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+    
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27%;
+    background-color: #81A4CD;
+    font-family: 'Major Mono Display', monospace;
+    font-size: x-large;
+}
+    
+.add-movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40%;
+background-color: #3E7CB1;
+}
+
+.section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 31%;
+    background-color: #054A91;
+    
+}
+
+.addAllMovies {
+    display: flex;
+    margin-top: 8%;
+}
+
+#showMovies {
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid black;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #616467;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: white;
+    height: 48px;
+    :hover{
+        color: #fff;
+        background-color: #616467;
+    }
+}
+
+.displayedMovies__container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 1rem;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: auto;
+    height: 93%;
+    width: 93%;
+    background-color: white;
+    padding: 1rem;
+}
+
+.displayedMovies__container h2, h3 {
+    font-family: 'Major Mono Display', monospace;
+}
+
+.displayedMovies__container p {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.displayedMovies__card {
+    max-width: 300px;
+    background-color: #fffffe;
+    text-align: center;
+    padding: 1.2rem;
+    box-shadow: 0 5px 15px -10px rgba(31, 18, 53, 0.6);
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.watched-button {
+    margin-right: 1%;
+}
+
+.delete-button {
+    margin-left: 1%;
+}
+
+.close-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #078080;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.close-button:hover {
+    background-color: #056265;
+}
